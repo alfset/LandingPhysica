@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem('theme') ? 'light' : localStorage.getItem('theme'),
+    localStorage.getItem('theme') ?  localStorage.getItem('theme') : 'light',
   );
 
   const [scrolled, setScrolled] = useState(false);
