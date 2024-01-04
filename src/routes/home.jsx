@@ -11,6 +11,7 @@ import CardCta from '../components/Card/CardCta';
 import Footer from '../components/Footer';
 import CircleList from '../components/AnimatedBackground/circles';
 import CoinAnimation from '../components/AnimatedBackground/coinImage';
+import LottieAnimation from '../components/Lottie/index';
 
 function Page() {
   const cardsData = [
@@ -115,10 +116,7 @@ function Page() {
         <CircleList />
         <div className="min-h-screen bg-white hero dark:bg-primary">
           <div className="flex flex-col items-center justify-between w-screen px-5 pb-20 lg:px-10 hero-content lg:flex-row-reverse">
-            <img
-              src="/img-hero.svg"
-              className="w-auto h-[350px] max-w-sm mb-2 lg:h-auto lg:mb-0 lg:mr-12"
-            />
+            <LottieAnimation srcJson="https://lottie.host/2d4acf10-1896-453f-9439-ed4bdb50b08a/GiXrDSehd5.json" />
             <div className="justify-center lg:justify-start">
               <h1 className="text-4xl font-bold lg:text-5xl">
                 <span className="text-blue-900 dark:text-neutral">Physica</span>{' '}
