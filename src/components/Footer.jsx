@@ -6,23 +6,23 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const ecosystem = [
     {
-      url: '#',
+      url: 'https://app.physica.finance/#/swap',
       name: 'Trade',
     },
     {
-      url: '#',
+      url: 'https://swap.deltaswap.io/#/transfer',
       name: 'Bridge',
     },
     {
-      url: '#',
-      name: 'Earn',
+      url: 'https://app.physica.finance/#/pools',
+      name: 'Pools',
     },
-    // {
-    //   url: '#',
-    //   name: 'NFTs',
-    // },
     {
-      url: '#',
+      url: 'https://restake.app/planq',
+      name: 'Staking',
+    },
+    {
+      url: 'https://planq.network/whitepaper',
       name: 'Tokenomics',
     },
   ];
@@ -33,11 +33,11 @@ const Footer = () => {
     //   name: 'Bug Bounty',
     // },
     {
-      url: '#',
+      url: 'https://github.com/Physica-Finance/',
       name: 'Contributing',
     },
     {
-      url: '#',
+      url: 'https://github.com/Physica-Finance/',
       name: 'Github',
     },
     {
@@ -71,15 +71,15 @@ const Footer = () => {
       name: 'Privacy',
     },
     {
-      url: '#',
+      url: 'https://planq.network/',
       name: 'Planq Network',
     },
     {
-      url: '#',
+      url: 'https://medium.com/@planq',
       name: 'Medium',
     },
     {
-      url: '#',
+      url: 'https://www.reddit.com/r/planq_network',
       name: 'Reddit',
     },
   ];
@@ -105,7 +105,12 @@ const Footer = () => {
         {title}
       </header>
       {items.map((item, index) => (
-        <Link to={item.url} className="link link-hover" key={index}>
+        <Link
+          to={item.url}
+          target="_blank"
+          className="link link-hover"
+          key={index}
+        >
           {item.name}
         </Link>
       ))}
