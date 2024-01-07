@@ -179,13 +179,13 @@ function Page() {
             ))}
           </div>
           <div className="py-10 text-center lg:py-5">
-            <Button
+            {/* <Button
               url="https://discord.com/invite/planq-network"
               target="_blank"
               other="animate-bounce px-10 text-white dark:text-primary text-xl bg-gradient-to-r from-info to-blue-900 hover:bg-gradient-to-l from-info to-blue-900 dark:bg-gradient-to-r from-info to-accent hover:dark:bg-gradient-to-l from-info to-accent  border-0"
             >
               Join Now
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>

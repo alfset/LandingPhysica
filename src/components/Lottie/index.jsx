@@ -21,8 +21,13 @@ const LottieAnimation = (props) => {
   }, []);
 
   return (
-    <div className="w-auto max-w-sm mb-2 h-[350px] lg:h-screen lg:max-w-md lg:mb-0 lg:mr-12">
-      {animationData && <Lottie animationData={animationData} />}
+    <div className="flex items-center justify-center h-screen">
+      {animationData && (
+        <Lottie
+          animationData={animationData}
+          style={{ width: '500px', height: '500px' }}
+        />
+      )}
     </div>
   );
 };
