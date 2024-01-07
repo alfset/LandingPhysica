@@ -10,9 +10,17 @@ const CustomCarousel = () => {
   const slidesData = [
     {
       url: 'https://play.google.com/store/apps/details?id=network.planq.castrum',
-      btn: 'Wallet',
-      description: 'Castrum is an app for private and secure communication.',
-      imagePath: './carousel/restake.svg',
+      btn: 'dApps',
+      description:
+        'Yieldmos enables you to boost yields through automated compounding.',
+      imagePath: './carousel/yieldmos-logo.svg',
+    },
+    {
+      url: 'https://play.google.com/store/apps/details?id=network.planq.castrum',
+      btn: 'dApps',
+      description:
+        'Unified cross-chain interface, average transaction speed within 100 secs, no-slippage swap.',
+      imagePath: './carousel/delta-logo.svg',
     },
     {
       url: 'https://restake.app/planq',
@@ -30,7 +38,7 @@ const CustomCarousel = () => {
   ];
   return (
     <Swiper
-      className="bg-transparent  swiper"
+      className="bg-transparent swiper"
       effect={'coverflow'}
       grabCursor={true}
       spaceBetween={30}
