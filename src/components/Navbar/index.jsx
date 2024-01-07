@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [theme, setTheme] = useState(
-    localStorage.getItem('theme') ?  localStorage.getItem('theme') : 'light',
+    localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light',
   );
 
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
     {
       icon: <FaTools className="text-blue-950 dark:text-neutral" />,
       children: 'Bridge',
-      href: 'https://test-token.factory.physica.finance',
+      href: 'https://swap.deltaswap.io/#/transfer',
       target: '_blank',
     },
     {

@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-no-duplicate-props */
+// import { useState } from 'react';
 import { FaChevronRight } from '@react-icons/all-files/fa/FaChevronRight';
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
 import { FaDiscord } from '@react-icons/all-files/fa/FaDiscord';
@@ -11,6 +12,7 @@ import CardCta from '../components/Card/CardCta';
 import Footer from '../components/Footer';
 import CircleList from '../components/AnimatedBackground/circles';
 import CoinAnimation from '../components/AnimatedBackground/coinImage';
+import LottieAnimation from '../components/Lottie/index';
 
 function Page() {
   const cardsData = [
@@ -115,10 +117,7 @@ function Page() {
         <CircleList />
         <div className="min-h-screen bg-white hero dark:bg-primary">
           <div className="flex flex-col items-center justify-between w-screen px-5 pb-20 lg:px-10 hero-content lg:flex-row-reverse">
-            <img
-              src="/img-hero.svg"
-              className="w-auto h-[350px] max-w-sm mb-2 lg:h-auto lg:mb-0 lg:mr-12"
-            />
+            <LottieAnimation srcJson="https://lottie.host/2d4acf10-1896-453f-9439-ed4bdb50b08a/GiXrDSehd5.json" />
             <div className="justify-center lg:justify-start">
               <h1 className="text-4xl font-bold lg:text-5xl">
                 <span className="text-blue-900 dark:text-neutral">Physica</span>{' '}
@@ -181,13 +180,13 @@ function Page() {
             ))}
           </div>
           <div className="py-10 text-center lg:py-5">
-            <Button
+            {/* <Button
               url="https://discord.com/invite/planq-network"
               target="_blank"
               other="animate-bounce px-10 text-white dark:text-primary text-xl bg-gradient-to-r from-info to-blue-900 hover:bg-gradient-to-l from-info to-blue-900 dark:bg-gradient-to-r from-info to-accent hover:dark:bg-gradient-to-l from-info to-accent  border-0"
             >
               Join Now
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -195,23 +194,39 @@ function Page() {
         <div className="min-h-screen bg-white hero dark:bg-primary">
           <CoinAnimation />
           <div className="flex flex-col items-center justify-center w-screen space-y-4 text-center bg-transparent">
-            <h1 className="z-10 max-w-sm text-5xl font-semibold leading-normal text-blue-900 dark:text-neutral">
-              Join Physica Finance Early!
+            <h1 className="z-10 max-w-xl text-5xl font-semibold leading-normal text-blue-900 dark:text-neutral">
+              Join Physica Finance, Buy $PLQ!
             </h1>
             <p className="z-10 max-w-lg pb-10 text-lg text-neutral">
               Become an early user of Physica Finance and unlock the full
               potential of DeFi
             </p>
-            <Button
-              url="https://bingx.com/en-us/spot/PLQUSDT/"
-              target="_blank"
-              other="animate-bounce btn-sm px-5 h-14 inline-flex justify-center items-center gap-4 flex-shrink-0 bg-blue-500 dark:bg-accent hover:bg-blue-400 hover:shadow-blue-400 hover:shadow-lg hover:text-primary shadow shadow-blue-800 dark:shadow-accent border-0"
-            >
-              <span className="text-xl text-white">Buy</span>
-              <span className="px-3 py-1 bg-white rounded-full dark:bg-neutral">
-                <p className="text-xl text-black">$PLQ</p>
-              </span>
-            </Button>
+            <div className="flex items-center justify-between gap-4">
+              <Button
+                url="/"
+                target="_blank"
+                other={`animate-bounce btn-sm px-5 h-14 inline-flex justify-center items-center gap-4 flex-shrink-0 bg-white dark:bg-white hover:bg-white hover:shadow-blue-500 hover:shadow-lg hover:text-primary shadow shadow-blue-800 dark:shadow-white border-0`}
+              >
+                {/* <span className="text-xl text-white">Buy $PLQ</span> */}
+                <span className="px-3 py-1 bg-white rounded-full dark:bg-neutral">
+                  <p className="flex items-center justify-between text-xl text-blue-700">
+                    <img src="./bingx.svg" width="40" alt="" /> BingX
+                  </p>
+                </span>
+              </Button>
+              <Button
+                url="/"
+                target="_blank"
+                other={`animate-bounce btn-sm px-5 h-14 inline-flex justify-center items-center gap-4 flex-shrink-0 bg-purple-400 dark:bg-purple-500 hover:bg-purple-400 hover:shadow-purple-400 hover:shadow-lg hover:text-primary shadow shadow-purple-800 dark:shadow-purple-500 border-0`}
+              >
+                {/* <span className="text-xl text-white">Buy $PLQ</span> */}
+                <span className="px-3 py-1 rounded-full">
+                  <p className="flex items-center justify-between gap-2 text-xl text-white">
+                    <img src="./osmosis.svg" width="20" alt="" /> Osmosis
+                  </p>
+                </span>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

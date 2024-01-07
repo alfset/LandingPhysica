@@ -17,6 +17,7 @@ const Button = (props) => {
     isButton,
     url,
     target,
+    onClick,
   } = props;
 
   return isButton === true ? (
@@ -24,6 +25,7 @@ const Button = (props) => {
       type={`${type}`}
       className={`btn ${btnType} ${bgColor} ${rounded} ${size} ${padding} ${gradient} ${textColor}
       ${textTransform} ${other}`}
+      onClick={onClick}
     >
       {children}
     </button>
