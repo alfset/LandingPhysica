@@ -37,7 +37,7 @@ const Footer = () => {
       name: 'Github',
     },
     {
-      url: 'discord.gg/planq-network',
+      url: 'https://discord.gg/planq-network',
       name: 'Partnerships',
     },
   ];
