@@ -42,7 +42,7 @@ const Navbar = () => {
     {
       icon: <FaWallet className="text-blue-950 dark:text-neutral" />,
       children: 'Staking',
-      href: 'https://restake.app/planq',
+      href: 'https://www.yieldmos.com/chain/planq',
       target: '_blank',
     },
   ];
