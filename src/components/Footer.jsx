@@ -28,10 +28,6 @@ const Footer = () => {
   ];
 
   const developers = [
-    // {
-    //   url: '#',
-    //   name: 'Bug Bounty',
-    // },
     {
       url: 'https://github.com/Physica-Finance/',
       name: 'Contributing',
@@ -41,34 +37,30 @@ const Footer = () => {
       name: 'Github',
     },
     {
-      url: '#',
+      url: 'https://discord.gg/planq-network',
       name: 'Partnerships',
     },
   ];
 
   const supports = [
     {
-      url: '#',
+      url: 'https://discord.gg/vcGKPUNjNF',
       name: 'Contact',
     },
     {
-      url: '#',
+      url: 'https://physica-finance.gitbook.io/about/',
       name: 'Documentation',
     },
     {
-      url: '#',
+      url: 'https://discord.gg/vcGKPUNjNF',
       name: 'Troubleshooting',
     },
   ];
 
   const about = [
     {
-      url: '#',
-      name: 'Term of Use',
-    },
-    {
-      url: '#',
-      name: 'Privacy',
+      url: 'https://physica-finance.gitbook.io/about/physica-finance-privacy-policy',
+      name: 'Term of Use & privacy',
     },
     {
       url: 'https://planq.network/',

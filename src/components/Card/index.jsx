@@ -26,7 +26,7 @@ const CustomCard = (props) => {
         <div
           className={`flex flex-col text-center ${borderClasses} ${other} ${borderColor}`}
         >
-          <figure className="px-10 animate-pulse">
+          <figure className="p-20 animate-pulse">
             <img src={imgUrl} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className={`pb-10 ${spaceY}`}>

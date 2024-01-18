@@ -20,7 +20,7 @@ function Page() {
       borderColor: 'border-purple-600',
       other: '',
       isBorder: true,
-      img: './3dicons-1.svg',
+      img: './3d-icons/icon-1.png',
       title: 'Trade',
       classCard: 'z-10 lg:z-0',
       spaceY: 'space-y-3',
@@ -42,7 +42,7 @@ function Page() {
       borderColor: '',
       other: 'py-5 lg:py-20',
       isBorder: false,
-      img: './3dicons-2.svg',
+      img: './3d-icons/icon-2.png',
       spaceY: 'space-y-3 lg:space-y-6',
       titleClass: 'text-violet-400 text-4xl justify-center',
       title: 'Bridge',
@@ -64,7 +64,7 @@ function Page() {
       borderColor: 'border-info',
       other: '',
       isBorder: true,
-      img: './3dicons-3.svg',
+      img: './3d-icons/icon-3.png',
       spaceY: 'space-y-2',
       titleClass: 'title-earn text-4xl justify-center',
       title: 'Earn',
@@ -160,7 +160,7 @@ function Page() {
             {cardsData.map((card, index) => (
               <div key={index}>
                 <CustomCard
-                  widtHeight="w-auto"
+                  widtHeight="w-auto p-10"
                   imgUrl={card.img}
                   isBorder={card.isBorder}
                   url={card.url}
