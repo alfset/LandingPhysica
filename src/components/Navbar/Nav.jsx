@@ -34,7 +34,7 @@ const Nav = () => {
         Trade
       </NavItem>
       <NavItem
-        url="https://test-token.factory.physica.finance"
+        url="https://deltaswap.io"
         target="_blank"
         textColor="text-neutral"
       >
